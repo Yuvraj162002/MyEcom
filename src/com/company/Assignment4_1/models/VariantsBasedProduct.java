@@ -1,8 +1,8 @@
-package com.company.models;
+package com.company.Assignment4_1.models;
 
 import java.util.List;
 
-public class VariantsBasedProduct extends  Product{
+public class VariantsBasedProduct extends Product {
 
     List<Variant>Variant;
 

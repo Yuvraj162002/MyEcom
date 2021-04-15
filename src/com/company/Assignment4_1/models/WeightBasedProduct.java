@@ -1,6 +1,6 @@
-package com.company.models;
+package com.company.Assignment4_1.models;
 
-public class WeightBasedProduct extends  Product{
+public class WeightBasedProduct extends Product {
 
     Float minQut;
     Float pricePerKg;

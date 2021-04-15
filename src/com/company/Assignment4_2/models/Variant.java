@@ -1,9 +1,11 @@
-package com.company.models;
+package com.company.Assignment4_2.models;
 
 public class Variant {
 
-    String name;
-    Float price;
+    public static String name;
+    //public static String name;
+   // public String name;
+    public  Float price;
     //private String regex;
 
     public Variant(String name, Float price) {
@@ -14,7 +16,7 @@ public class Variant {
 
     @Override
     public String toString() {
-        return String.format("%s @ Rs. %f",name,price);
+        return String.format("%s @ Rs. %.2f",name,price);
 
     }
 }

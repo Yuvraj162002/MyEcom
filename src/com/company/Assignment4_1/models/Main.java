@@ -1,9 +1,4 @@
-package com.company;
-
-import com.company.models.Product;
-import com.company.models.Variant;
-import com.company.models.VariantsBasedProduct;
-import com.company.models.WeightBasedProduct;
+package com.company.Assignment4_1.models;
 
 import java.util.ArrayList;
 import java.util.Arrays;
