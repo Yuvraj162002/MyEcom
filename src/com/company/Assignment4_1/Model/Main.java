@@ -1,4 +1,4 @@
-package com.company.Assignment4_1.models;
+package com.company.Assignment4_1.Model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,7 +27,7 @@ public class Main {
         );
         System.out.println(products);
     }
-        //// Hashcode and equal method....
+    //// Hashcode and equal method....
 
     /*    Product product1 = new Product("Apple"," ");
         Product product2 = new Product("Apple"," ");
@@ -38,7 +38,7 @@ public class Main {
         System.out.println(product1.equals(product2));
 */
 
-        /// Hashcode...when we have two same string   then their value after hashcode will be same....
+    /// Hashcode...when we have two same string   then their value after hashcode will be same....
 
       /*  String a = "BA";
         String b = "BA";
@@ -46,7 +46,7 @@ public class Main {
         System.out.println(b.hashCode());
 */
 
-        ///Varient Based Product....
+    ///Varient Based Product....
 
        /* List<Variant>variants = new ArrayList<>(
                 Arrays.asList(
@@ -59,7 +59,7 @@ public class Main {
         System.out.println(variantsBasedProduct);
 */
 
-        //// Array list of product....
+    //// Array list of product....
 
        /* List<Product>products = new ArrayList<>(
                 Arrays.asList(
@@ -91,28 +91,28 @@ public class Main {
 
 
 
-        // Weight based product...
+    // Weight based product...
       /*  WeightBasedProduct product = new WeightBasedProduct("Apple","ab.cd",1,100.0f);
             System.out.println(product);
         }*/
 
 
-        // When we make an  object of that constructor which have   paramters...
+    // When we make an  object of that constructor which have   paramters...
 
          /*Product product = new Product("Apple","abc");
        System.out.println(product);*/
 
 
-        // When we make an  object of that constructor which have no  paramters then it give null value...
+    // When we make an  object of that constructor which have no  paramters then it give null value...
 
        /* Product product1 = new Product();
         System.out.println(product1);*/
 
 
-        //NULL POINTER EXCEPTION---BECAUSE PRODUCT1 HAVE NO VALUE MEANS IT IS NULL SO HOW YOU CALL THE UPPERCASE..
+    //NULL POINTER EXCEPTION---BECAUSE PRODUCT1 HAVE NO VALUE MEANS IT IS NULL SO HOW YOU CALL THE UPPERCASE..
 
        /* Product product1 = new Product();
         System.out.println(product1.name.toUpperCase());*/
 
-    }
+}
 

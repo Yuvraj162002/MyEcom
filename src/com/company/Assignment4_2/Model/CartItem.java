@@ -1,9 +1,10 @@
-package com.company.Assignment4_2.models;
+package com.company.Assignment4_2.Model;
 
 public class CartItem {
 
     public  String name;
-    Float UnitPerPrice , qty;
+    Float UnitPerPrice;
+    public Float qty;
 
     public CartItem(String name, Float unitPerPrice, Float qty) {
         this.name = name;
@@ -11,7 +12,7 @@ public class CartItem {
         this.qty = qty;
     }
 
-    Float cost(){
+    public  Float cost(){
         return UnitPerPrice * qty;
     }
 

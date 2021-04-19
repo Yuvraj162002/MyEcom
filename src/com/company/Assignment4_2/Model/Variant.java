@@ -1,12 +1,11 @@
-package com.company.Assignment4_1.models;
+package com.company.Assignment4_2.Model;
 
 public class Variant {
 
     public static String name;
-    public Float price;
     //public static String name;
-  //  String name;
-   // Float price;
+   // public String name;
+    public  Float price;
     //private String regex;
 
     public Variant(String name, Float price) {

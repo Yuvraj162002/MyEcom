@@ -1,7 +1,7 @@
 
-    package com.company.Assignment4_1.models;
+    package com.company.Assignment4_1.Model;
 
-import com.company.Assignment4_2.models.ProductType;
+import com.company.Assignment4_2.Model.ProductType;
 
 import java.util.List;
 
@@ -21,6 +21,7 @@ import java.util.List;
 
         //WB..
         public Product(String name, String imageURL) {
+
             type = ProductType.TYPE_Weightbased;
             this.name = name;
             this.imageURL = imageURL;

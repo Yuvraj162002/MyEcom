@@ -1,4 +1,4 @@
-package com.company.Assignment4_2.models;
+package com.company.Assignment4_2.Model;
 
 public class ProductType {
 

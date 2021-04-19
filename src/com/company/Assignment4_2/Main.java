@@ -1,8 +1,8 @@
 package com.company.Assignment4_2;
 
-import com.company.Assignment4_1.models.Variant;
-import com.company.Assignment4_2.models.Cart;
-import com.company.Assignment4_1.models.Product;
+import com.company.Assignment4_1.Model.Variant;
+import com.company.Assignment4_1.Model.Product;
+import com.company.Assignment4_2.Model.Cart;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,18 +1,18 @@
-package com.company.Assignment4_2.models;
+package com.company.Assignment4_2.Model;
 
-import com.company.Assignment4_1.models.Product;
-import com.company.Assignment4_1.models.Variant;
+import com.company.Assignment4_1.Model.Product;
+import com.company.Assignment4_1.Model.Variant;
 
 import java.util.HashMap;
 
 public class Cart {
 
-    HashMap<String, CartItem> cartItem = new HashMap<>();
-    Float total;
-    Float noOfItems;
+    public HashMap<String, CartItem> cartItem = new HashMap<>();
+   public Float total;
+    public Float noOfItems;
 
     //Weight based product..
-    public void add(Product product, Float qty) {
+    public void add(Product product, float qty) {
         //If product already present in the cart..
         if (cartItem.containsKey(product.name)) {
 
@@ -74,7 +74,7 @@ public class Cart {
     ///Removing all  variant of Variant based product..
     public void removeAllVariantBasedProduct(Product product) {
         for (Variant variant : product.Variant) {
-            String key = product.name + " " + variant.name;
+            String key = product.name + " " + Variant.name;
 
             if (cartItem.containsKey(key)) {
                 ///Update cartSummary...
@@ -91,7 +91,7 @@ public class Cart {
 
     //decrement qty..
     public void decrement(Product product, Variant variant) {
-        String key = product.name + " " + variant.name;
+        String key = product.name + " " + Variant.name;
 
 
         //Update qty..
@@ -116,4 +116,13 @@ public class Cart {
                 ", noOfItems=" + noOfItems +
                 '}';
     }
+
+   // public void remove(com.company.Assignment4_2.Model.Product product) {
+  //  }
+
+    //public void add(com.company.Assignment4_2.Model.Product product, float quantity) {
+    //}
+
+    //public void add(com.company.Assignment4_2.Model.Product product, com.company.Assignment4_2.Model.Variant variant) {
+//    }
 }

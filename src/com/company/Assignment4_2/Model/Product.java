@@ -1,7 +1,7 @@
 
-package com.company.Assignment4_2.models;
+package com.company.Assignment4_2.Model;
 
-import com.company.Assignment4_2.models.ProductType;
+//import jdk.internal.access.JavaIOFileDescriptorAccess;
 
 import java.util.List;
 
@@ -11,12 +11,14 @@ public class Product {
     public String name;
     public String imageURL;
     public int type;
+    public com.company.Assignment4_1.Model.Variant[] variantList;
+    // public JavaIOFileDescriptorAccess variantsList;
     //WEIGHT BASED PRODUCT..
     Float minQut;
     public  Float pricePerKg;
 
     //VARIANT BASED PRODUCT..
-    public List<Variant> Variant;
+    public List<Variant> VariantList;
 
     //WB..
     public Product(String name, String imageURL, Float minQut, Float pricePerKg) {
@@ -26,13 +28,27 @@ public class Product {
         this.minQut = minQut;
         this.pricePerKg = pricePerKg;
     }
+
+    public Product(String name, String imageUrl, List<com.company.Assignment4_1.Model.Variant> variants) {
+    }
+
+    // public Product(String productName, String imageURL, List<Variants> var) {
+    //}
+
     //VB..
-    public Product(String name, String imageURL,List<Variant> variant){
+    public void Products(String name, String imageURL, List<Variant> variant) {
+
         type = ProductType.TYPE_Varientbased;
         this.name = name;
         this.imageURL = imageURL;
-        this.Variant = variant;
+        this.VariantList = variant;
     }
+
+    //public Product(String productName, String imageURL, List<com.company.Assignment4_1.Model.Variant> var) {
+    //}
+
+    //public Product(String productName, String imageURL, List<com.company.Assignment4_1.Model.Variant> var) {
+    //}
 
     @Override
     public String toString() {
@@ -40,9 +56,9 @@ public class Product {
         StringBuilder builder = new StringBuilder();
 
         if (type == ProductType.TYPE_Weightbased)
-            builder.append("Weightbased { ");
+            builder.append("WeightBased { ");
         else
-            builder.append("Varientbased { ");
+            builder.append("VarientBased { ");
 
         builder.append("name = ").append(name);
 
@@ -50,8 +66,8 @@ public class Product {
             builder.append("minQty = ").append(minQut);
             builder.append("pricePerKg = ").append(pricePerKg);
         } else {
-            builder.append("Varientbased { ");
-            builder.append(",variant = ").append(Variant);
+            builder.append("VarientBased { ");
+            builder.append(",variant = ").append(VariantList);
         }
         builder.append(" } ");
 
