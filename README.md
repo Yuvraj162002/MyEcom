@@ -11,7 +11,7 @@ which are as follows:-
 *[Assignment 4.3](https://github.com/Yuvraj162002/MyEcom/tree/master/src/com/company/Assignment4_3)
 
 To know further details regarding this project you can go and check out the tutorial 
-*[NAAD 2.0](https://www.youtube.com/playlist?list=PLMY-jYOisFilczfqkPVk_5napZFpRk3W0)
+[NAAD 2.0](https://www.youtube.com/playlist?list=PLMY-jYOisFilczfqkPVk_5napZFpRk3W0)
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
